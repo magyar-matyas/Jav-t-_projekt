@@ -1,1 +1,5 @@
-# Jav-t-_projekt
+# Javito_projekt
+
+- Magyar Mátyás
+- Fehér Kristóf
+- Hajba Bálint
