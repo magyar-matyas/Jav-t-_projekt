@@ -1,0 +1,41 @@
+#jatekkocka{
+    background-color: rgba(255, 175, 0, 0.75);
+    width: 890px;
+    height: 600px;
+    border: 15px double rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 150px;
+    z-index: 0;
+    position: absolute;
+    right: 100px;
+    left: 100px;
+}
+
+#layover{
+    background-color: rgba(0, 0, 255, 0.1);
+    width: 890px;
+    height: 625px;
+    margin: auto;
+    margin-top: 150px;
+    z-index: 1;
+    position: absolute;
+    right: 100px;
+    left: 100px;
+}
+
+#layover2{
+    width: 890px;
+    height: 625px;
+    margin: auto;
+    margin-top: 150px;
+    z-index: 0;
+    position: absolute;
+    right: 100px;
+    left: 100px;
+}
+
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+    margin: auto;
+}

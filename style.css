@@ -41,3 +41,19 @@ body {
     background-color: rgb(255, 0, 0);
     transition: 0.5s;
   }
+
+  #kergetokezd{
+    border: 7px double black;
+    position: absolute;
+    color: azure;
+    bottom: 100px;
+    left: 850px;
+  }
+
+  #kergetotitle{
+    border: 7px double black;
+    font-size: 25px;
+    position: absolute;
+    bottom: 120px;
+    left: 850px;
+  }
