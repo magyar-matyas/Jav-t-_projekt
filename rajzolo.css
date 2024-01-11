@@ -3,4 +3,35 @@
     width: 80%;
     height: 90%;
     background-color: aliceblue;
+    position: relative;
+    left: 200px;
+}
+
+#beallitasok{
+    position: relative;
+    bottom: -10px;
+    left: 750px;
+}
+
+#labels{
+    position: relative;
+    bottom: -2px;
+}
+
+#labels span{
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    margin-right: 27px;
+}
+
+#beallitasok input{
+    width: 75px;
+    height: 25px;
+    text-align: center;
+}
+
+#clear{
+    position: absolute;
+    bottom: 50px;
+    left: 900px;
 }

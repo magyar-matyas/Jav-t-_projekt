@@ -43,10 +43,10 @@ function rajzol() {
   rajzolo.fillRect(x, y, rajzszeles, rajzmagas);
   rajzolo.fillStyle=color;
 
-  if (x < 1) x = 310;
-  if (x > 310) x = 1;
-  if (y <= 1) y = 145;
-  if (y > 144) y = 1;
+  if (x < -vxj) x = 310;
+  if (x > 310) x = -vxj;
+  if (y < -vy) y = 145;
+  if (y > 144) y = -vy;
 
   requestAnimationFrame(rajzol);
 }

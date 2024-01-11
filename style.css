@@ -50,6 +50,14 @@ body {
     left: 850px;
   }
 
+  #rajzolokezd{
+    border: 7px double black;
+    position: absolute;
+    color: azure;
+    bottom: 100px;
+    left: 1000px;
+  }
+
   #kergetotitle{
     border: 7px double black;
     font-size: 25px;
