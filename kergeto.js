@@ -12,6 +12,8 @@ const block4 = layover2.getContext("2d");
 
 let pontszam = document.querySelector("#pontszam");
 let visszalink = document.querySelector("#visszagomb");
+let random = document.querySelector("#randomsagok");
+let gombnyomdb = document.querySelector("#gombnyomasok");
 
 let x = 5;
 let y = 5;
@@ -23,13 +25,26 @@ let vxb = 0;
 let vxj = 0;
 let vy = 0;
 let pont = 0;
+let falnakmenet = 0;
+let gombnyomasdb = 0;
 
 addEventListener("keydown", function (e) {
-  if (e.code == "KeyD") vxj = 10;
-  if (e.code == "KeyA") vxb = -10;
-  if (e.code == "KeyW") vy = -10;
-  if (e.code == "KeyS") vy = 10;
-  console.log(e.code);
+  if (e.code == "KeyD") {
+    gombnyomasdb++;
+    vxj = 10
+  };
+  if (e.code == "KeyA") {
+    gombnyomasdb++;
+    vxb = -10
+  };
+  if (e.code == "KeyW") {
+    gombnyomasdb++;
+    vy = -10
+  };
+  if (e.code == "KeyS") {
+    gombnyomasdb++;
+    vy = 10
+  };
 });
 
 addEventListener("keyup", function (e) {
@@ -47,16 +62,30 @@ function rajzol() {
   y += vy;
 
   ctx.fillRect(x, y, wide, tall);
-  ctx.lineJoin = "bevel";
   block.fillRect(150, 200, 30, 200);
   block2.fillRect(400, 150, 30, 200);
   block3.fillRect(65, 65, 200, 30);
   block4.fillRect(240, 400, 200, 30);
 
-  if (x < 1) x = 489;
-  if (x > 489) x = 1;
-  if (y < 1) y = 485;
-  if (y > 485) y = 1;
+  ctx.fillStyle="gold"
+  block.fillStyle="#950500"
+
+  if (x < 1) {
+    x = 489;
+    falnakmenet++;
+  };
+  if (x > 489) {
+    x = 1;
+    falnakmenet++;
+  };
+  if (y < 1) {
+    y = 485;
+    falnakmenet++;
+  };
+  if (y > 485) {
+    y = 1;
+    falnakmenet++;
+  };
 
   if (
     (x + 10 >= tx && x + 10 <= tx + 50 && y + 20 < ty + 70 && y + 20 >= ty) ||
@@ -95,6 +124,9 @@ function rajzol() {
   }
 
   pontszam.innerHTML = "Pontszámod: " + pont;
+
+  random.innerHTML=falnakmenet;
+  gombnyomdb.innerHTML=gombnyomasdb;
 
   requestAnimationFrame(rajzol);
 }
