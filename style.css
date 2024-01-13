@@ -76,6 +76,19 @@ body {
 }
 
 #fooldal_kep{
-  margin-left: 1200px;
+  position: relative;
+  float: right;
+  bottom: 450px;
+  display: block;
   height: 300px;
+  margin-right: 200px;
+}
+
+#jokivansag{
+  position: relative;
+  color: black;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 400px;
 }
