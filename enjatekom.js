@@ -55,7 +55,7 @@ function ujPontszam() {
 
 function vegetErtJatek() {
     jatekVege = true;
-    alert("Játék vége! Maximális pontszám: " + pontszam);
+    alert("A játéknak vége! Maximális pontszámod: " + pontszam);
     ujJatek();
 }
 
