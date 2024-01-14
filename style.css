@@ -92,3 +92,20 @@ body {
   text-align: center;
   margin-left: 400px;
 }
+
+
+#rajzolokezd{
+  border: 7px double black;
+  position: absolute;
+  color: azure;
+  bottom: 100px;
+  left: 860px;
+}
+
+#kergetotitle{
+  border: 7px double black;
+  font-size: 25px;
+  position: absolute;
+  bottom: 120px;
+  left: 800px;
+}
