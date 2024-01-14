@@ -39,8 +39,59 @@ body {
   
   .navbar-link:hover {
     background-color: rgb(255, 0, 0);
-    transition: 0.5s;
+    transition: 0.2s;
   }
+
+  h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.szovegtagol{
+  color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-top: 50px;
+  }
+
+#adatok{
+  font-weight: normal;
+}
+
+#leiras{
+  font-weight: normal;
+}
+
+#jatekutasitas{
+  color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#fooldal_kep{
+  position: relative;
+  float: right;
+  bottom: 450px;
+  display: block;
+  height: 300px;
+  margin-right: 200px;
+}
+
+#jokivansag{
+  position: relative;
+  color: black;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 400px;
+}
 
   #rajzolokezd{
     border: 7px double black;
