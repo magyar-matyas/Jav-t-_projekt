@@ -49,7 +49,7 @@ body {
 	font-weight: 100; 
     text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; 
     color: white;
-	top: 12vh;
+	top: 60vh;
 	text-align: center;
 	display: block;
 	width: 100%;
@@ -64,17 +64,32 @@ body {
 	font-weight: 100;
     font-family: 'Pixelify Sans'; 
 	top: 0; 
-	left: 0; 
+	left: 0;
+}
+
+.highscore { 
+	height: 10vh; 
+	font-size: 10vh; 
+	font-weight: 100;
+    font-family: 'Pixelify Sans'; 
 }
 
 .scoreelements {
     background-image: url(img/barrier.png);
     margin: 0;
+	border: 5px solid rgb(33, 70, 18);
     text-align: center;
     vertical-align: middle;
 	text-shadow: 0 0 5px rgb(33, 70, 18), 0 0 5px rgb(33, 70, 18), 0 0 5px rgb(33, 70, 18), 0 0 5px rgb(33, 70, 18); 
     color: white;
-    border: 10px solid rgb(33, 70, 18);
+}
+
+.value {
+	border-left: 0;
+}
+
+.title {
+	border-right: 0;
 }
 
 .home {

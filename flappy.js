@@ -4,10 +4,16 @@ let nits = document.querySelector('.nits');
 let nits_props = nits.getBoundingClientRect();
 let background = document.querySelector('.background').getBoundingClientRect();
 let message = document.querySelector('.message');
-let score_value = document.querySelector('.score_value'); 
-let score_title = document.querySelector('.score_title'); 
+let score_value = document.querySelector('.score_value');
+let score_title = document.querySelector('.score_title');
+let highscore_value = document.querySelector('.highscore_value'); 
+let highscore_title = document.querySelector('.highscore_title');
 let game_state = 'Start'; 
-	
+
+score_title.innerHTML = 'Score : ';
+score_value.innerHTML = '0';
+highscore_value.innerHTML = localStorage.getItem('HighScore');
+highscore_title.innerHTML = 'HighScore : ';
  
 document.addEventListener('keydown', (event) => {
     if (event.keyCode == 13 && game_state != 'Play') {
@@ -17,10 +23,6 @@ document.addEventListener('keydown', (event) => {
         nits.style.top = '40vh';
         game_state = 'Play';
         message.innerHTML = '';
-        score_title.innerHTML = 'Score : ';
-        score_value.innerHTML = '0';
-        score_title.classList.add("scoreelements");
-        score_value.classList.add("scoreelements");
         play();
     } 
 }); 
@@ -52,7 +54,11 @@ function move() {
                 barrier_props.right +
                 bg_speed >= nits_props.left &&
                 element.increase_score == '1'){
-                    score_value.innerHTML = +score_value.innerHTML + 1;
+                    score_value.innerHTML++;
+                    if (score_value.innerHTML > highscore_value.innerHTML){
+                        highscore_value.innerHTML = score_value.innerHTML;
+                        localStorage.setItem('HighScore', score_value.innerHTML);
+                    }
                 }
             element.style.left = barrier_props.left - bg_speed + 'px';
 		}
