@@ -1,0 +1,98 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+    font-family: 'Pixelify Sans';                           
+}
+
+body { 
+	height: 100vh; 
+	width: 100vw; 
+} 
+
+.background {
+	height: 100%;
+	width: auto;
+	background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    background-size: 2500px 1250px;
+    image-rendering: pixelated;
+    animation: hattermozgas 3000s infinite linear;
+    -webkit-animation: hattermozgas 3000s infinite linear;
+} 
+
+.nits { 
+	height: 102px; 
+	width: 90px; 
+	position: fixed; 
+	top: 40vh; 
+	left: 30vw; 
+	z-index: 100;
+	image-rendering: pixelated;
+} 
+
+.barrier { 
+	position: fixed; 
+	top: 40vh; 
+	left: 100vw; 
+	height: 70vh; 
+	width: 6vw; 
+	background-image: url(img/barrier.png);
+    border: 10px solid rgb(33, 70, 18);
+} 
+
+.message {
+	position:absolute;
+	z-index: 10; 
+	height: 10vh; 
+	font-size: 10vh; 
+	font-weight: 100; 
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; 
+    color: white;
+	top: 12vh;
+	text-align: center;
+	display: block;
+	width: 100%;
+    margin: auto;
+} 
+
+.score { 
+	position: absolute; 
+	z-index: 10; 
+	height: 10vh; 
+	font-size: 10vh; 
+	font-weight: 100;
+    font-family: 'Pixelify Sans'; 
+	top: 0; 
+	left: 0; 
+}
+
+.scoreelements {
+    background-image: url(img/barrier.png);
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+	text-shadow: 0 0 5px rgb(33, 70, 18), 0 0 5px rgb(33, 70, 18), 0 0 5px rgb(33, 70, 18), 0 0 5px rgb(33, 70, 18); 
+    color: white;
+    border: 10px solid rgb(33, 70, 18);
+}
+
+.home {
+    position: absolute;
+    position: absolute; 
+	z-index: 10; 
+	height: 10vh;
+    top: 0; 
+	right: 0;
+    padding: 15px;
+    margin: 10px;
+}
+
+@keyframes hattermozgas{
+    from{
+		background-position: 0%;
+    }
+    to{
+		background-position: 10000%;
+    }
+}
