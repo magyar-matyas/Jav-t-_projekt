@@ -145,6 +145,6 @@ function targetupdate() {
 if (tx > 0 && ty > 0) setInterval(targetupdate, 800);
 setTimeout(function () {
   visszalink.click();
-}, 180000);
+}, 90000);
 
 rajzol();

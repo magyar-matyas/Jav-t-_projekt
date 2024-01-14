@@ -42,20 +42,12 @@ body {
     transition: 0.5s;
   }
 
-  #kergetokezd{
-    border: 7px double black;
-    position: absolute;
-    color: azure;
-    bottom: 100px;
-    left: 850px;
-  }
-
   #rajzolokezd{
     border: 7px double black;
     position: absolute;
     color: azure;
     bottom: 100px;
-    left: 1000px;
+    left: 860px;
   }
 
   #kergetotitle{
@@ -63,5 +55,5 @@ body {
     font-size: 25px;
     position: absolute;
     bottom: 120px;
-    left: 850px;
+    left: 800px;
   }
